@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 cuda_std = { version = "0.2", path = "../../../../crates/cuda_std" }
+ed25519-dalek = {git="https://github.com/andll/ed25519-dalek.git", branch = "test_no_zeroize", version="1.0", default-features=false, features=["u64_backend"]}
 
 [lib]
 crate-type = ["cdylib", "rlib"]
